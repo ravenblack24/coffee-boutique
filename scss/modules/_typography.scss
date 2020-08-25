@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Andika&family=Pacifico&display=swap');
+
+$ff-heading: 'Amatic SC', cursive;
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size:2rem;
+    color: $white;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: $ff-heading;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $green;
+    line-height: 0.95;
+    padding: 0.25em 0;
+
+    &--white {
+        color: $white;
+    }
+}
+
+h3 {
+    font-size: 2.25rem;
+    color: $green;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2.25rem;
+    color: $white;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Andika', cursive;
+    font-size: 1rem;
+    color: $green;
+    line-height: 1.375;
+    padding: 0.25em;
+}

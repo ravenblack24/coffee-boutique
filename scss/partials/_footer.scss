@@ -1,0 +1,36 @@
+.footer  {
+    background-color: $green;
+
+    &__block {
+        color: $white;
+        font-size: 0.875rem;
+
+        & p {
+            color: $white;
+            font-size: 0.875rem;
+        }
+
+        &__list { 
+
+            & dt {
+                font-weight: normal;
+            }
+
+            & li a {
+                text-decoration: none;
+                color: $white;
+            }
+
+            &__item {
+          
+
+                &__icon {
+                    padding-right: 1em;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+  
+    }
+}

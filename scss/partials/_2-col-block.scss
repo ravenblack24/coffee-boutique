@@ -1,0 +1,33 @@
+.block {
+    margin: 1.25em 0;
+
+    &--nomargin {
+        margin:0;
+    }
+
+    &__row{
+
+        &__image {
+            background-image: url(../../img/counter.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 295px;
+
+            &--bex {
+                background-image: url(../../img/rebekah.png);
+            }
+        }
+
+        &__container {
+            &__cta {
+                background-color: $purple;
+                border: none;
+                border-radius: 0;
+                font-family: $ff-heading;
+                font-size: 2.25rem;
+                padding:0;
+            }
+        }
+
+    }
+}

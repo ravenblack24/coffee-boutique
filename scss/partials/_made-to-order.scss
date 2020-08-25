@@ -1,0 +1,29 @@
+.made-to-order {
+    &__row {
+        background-image: url(../../img/bunting.PNG);
+        background-repeat: repeat-x;
+        padding-top: 4.5em;
+        text-align: center;
+
+        &__container {
+            &__service {
+                background-image: url(../../img/afternoontea.PNG);
+                background-size: cover;
+                background-position: center;
+                height: 288px;
+
+                &__cta {
+                    background-color: $purple;
+                    border: none;
+                    border-radius: 0;
+                    font-family: $ff-heading;
+                    font-size: 2.25rem;
+                    padding:0;
+                    z-index: 1000;
+                    display: inline-block;
+                    
+                }
+            }
+        }
+    }
+}

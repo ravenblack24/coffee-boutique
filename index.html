@@ -4,9 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <section class="banner">
+    </section>
+    <header class="header">  
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-end ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__title text-center">
+            <div class="container">
+                <img src="" alt="">
+                <h1>The Coffee Boutique</h1>
+                <p class="header__title__para">We're a local, independent, family run coffee shop</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-fluid block block--nomargin">
+            <div class="row block__row">
+                <div class="col-md-6 block__row__image">         
+                </div>
+                <div class="container pt-3 px-3 col-md-6 text-center block__row__container"> 
+                    <h2>Come in, we're open!</h2>
+                    <p>With full breakfast and lunch menus and a different choice of goodies every week, why not book a table and enjoy 50% off* when you eat in!</p>
+                    <p>Open: Mon, Tues, Wed & Fri <br />
+                        9:30am - 3pm</p>
+                    <button class="btn btn-primary btn-block block__row__container__cta">Book a table</button>
+                    <button class="btn btn-primary btn-block block__row__container__cta">Browse our menus</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid block">
+            <div class="row block__row">
+                <div class="col-md-6 block__row__image block__row__image--bex order-md-2">         
+                </div>
+                <div class="container pt-3 px-3 col-md-6 text-center block__row__container order-md-1"> 
+                    <h2>Hello, I'm Rebekah</h2>
+                    <p>I’m chief baker, decorator, and do everything else that comes with the shop!</p>
+                    <p>Running my own coffee shop has been my dream and I really love what I do.</p>
+                    <p>The best part is getting to know my customers and catching up when you pop in!</p>
+                    <button class="btn btn-primary btn-block block__row__container__cta">Read my story</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid made-to-order">
+            <div class="row text-center made-to-order__row">
+                <div class="container pt-3 px-3 col-md-10 text-center made-to-order__row__container">
+                    <h2 class="mx-auto">Made to order</h2>
+                    <p>As well as a choice of breakfast and lunch options, and the freshly, homemade, gluten-free cakes that you’ll find in the shop every day, we also offer a number of made to order services.</p>
+                    <p>Whether it’s an afternoon tea for two, a bespoke celebration cake, venue hire and catering for a party or catering for a business function we can help. Just click a service below to get in touch to let us know your requirements.</p>
+                    <p>We cater for almost all allergies and dietary requirements.</p>
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column made-to-order__row__container__service mb-3"> 
+                            <button class="btn btn-primary btn-block mt-auto mb-2  made-to-order__row__container__service__cta ">Afternoon Tea</button>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column made-to-order__row__container__service mb-3">
+                            <button class="btn btn-primary btn-block mt-auto  mb-2 made-to-order__row__container__service__cta">Bespoke Cakes</button>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column made-to-order__row__container__service">
+                            <button class="btn btn-primary btn-block mt-auto mb-2 made-to-order__row__container__service__cta">Private catering</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid shop">
+            <div class="row shop__row">
+                <div class="col-md-6 shop__row__image order-md-2">         
+                </div>
+                <div class="container pt-3 px-3 pb-4 col-md-6 text-center shop__row__container order-md-1"> 
+                    <h2>Shop online</h2>
+                    <p>A selection of our traybakes, puddings and cakes are available to buy online, perfect for a party or special occasion!</p>
+                    <p>Items can be collected in store or delivered within the following postcodes MK5, MK6, MK4</p>
+                    <button class="btn btn-primary btn-block made-to-order__row__container__service__cta">Browse the Shop</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid allergies text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/allergies.PNG" alt="" class="allergies__cake" >
+                </div>
+                <div class="container pt-4 px-2 col-md-6 text-center block__row__container"> 
+                    <h3>Did you know we cater for most allergies?</h3>
+                    <p>At the Coffee Boutique all our cakes are gluten free and you won’t even notice it! </p>
+                    <p>If you’re looking for delicious meals and treats that are dairy-free, nut-free or suitable for any other dietary requirement such as vegan, just let us know and we’ll make you something amazing!</p>
+                    <button class="btn btn-primary btn-block made-to-order__row__container__service__cta">Contact us</button>
+                </div>
+            </div>
+        </section>
+        <div class="bow">
+            <div class="bow__image"></div>
+        </div>
+    </main>
+    <footer class="container-fluid footer pt-4">
+        <div class="row container-fluid">
+            <div class="footer__block order-md-3 col-md-4">
+                <h4>About the shop</h4>
+                <p>We’re a local, independent family run coffee shop.  Specialising in fresh homemade cakes and sweet treats.</p>
+                <p>All our cakes are gluten free and we cater for nearly all dietary requirements and allergies</p>
+            </div>
+            <div class="footer__block order-md-2 col-md-4">
+                <h4>Opening hours</h4>
+                <dl class="row pt-2 footer__block__list">
+                    <dt class="col-6">Monday</dt>
+                    <dd class="col-6">9:30 - 15:00</dd>
+                    <dt class="col-6">Tuesday</dt>
+                    <dd class="col-6">9:30 - 15:00</dd>
+                    <dt class="col-6">Wednesday</dt>
+                    <dd class="col-6">9:30 - 15:00</dd>
+                    <dt class="col-6">Thursday</dt>
+                    <dd class="col-6">Closed</dd>
+                    <dt class="col-6">Friday</dt>
+                    <dd class="col-6">9:30 - 15:00</dd>
+                    <dt class="col-6">Saturday</dt>
+                    <dd class="col-6">Closed</dd>
+                    <dt class="col-6">Sunday</dt>
+                    <dd class="col-6">Closed</dd>
+                </dl>
+            </div>
+            <div class="footer__block order-md-1 col-md-4">
+                <h4>Get in touch</h4>
+                <ul class="pt-2 list-unstyled footer__block__list">
+                    <li class="pb-3"><a href="#"><i class="fab fa-facebook-f footer__block__list__item__icon"></i> mkcoffeeshop</a></li>
+                    <li class="pb-3"><a href="tel:01908 749012"><i class="fas fa-phone-alt  footer__block__list__item__icon"></i> 01908 749012</a></li>
+                    <li class="pb-3"><a href="mailto:hello@thecoffeeboutiquemk.co.uk"><i class="fas fa-envelope  footer__block__list__item__icon"></i> hello@thecoffeeboutiquemk.co.uk</a></li>
+                    <li class="pb-3"><i class="fas fa-map-marker-alt  footer__block__list__item__icon"></i> 9a Redgrave Drive, Oxley Park 
+                        MK4 4TB</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
 </body>
 </html>

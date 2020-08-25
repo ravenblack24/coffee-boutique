@@ -1,0 +1,33 @@
+.banner {
+    background-image: url(../../img/banner-large.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    min-height: 129px;
+}
+
+.navbar-toggler {
+    border: 0;
+    
+    .fa-bars {
+        color: $white;
+        font-size: 1.25rem;
+    }
+}
+
+.header {
+    background-color: #89B3AA;
+    min-height: 204px;
+
+    &__title {
+
+        &__para {
+            font-size: 1.875rem;
+            color: $white;
+            font-family: $ff-heading;
+            line-height: 1.06;
+        }
+    }
+}
+

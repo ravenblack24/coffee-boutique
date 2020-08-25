@@ -1,0 +1,33 @@
+.shop {
+    margin: 1.25em 0;
+    background-color: $green;
+  
+    &__row{
+
+        &__image {
+            background-image: url(../../img/millionaire.PNG);
+            background-size: cover;
+            background-position: center;
+            min-height: 388px;
+        }
+
+        &__container {
+
+            & h2,
+            & p {
+                color: $white;
+            }
+
+            &__cta {
+                background-color: $purple;
+                border: none;
+                border-radius: 0;
+                font-family: $ff-heading;
+                font-size: 2.25rem;
+                padding:0;
+
+            }
+        }
+
+    }
+}
