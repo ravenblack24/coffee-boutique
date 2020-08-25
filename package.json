@@ -8,6 +8,10 @@
   },
   "author": "Kay Pea",
   "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.1.0",
     "npm-sass": "^2.3.0"
   }
 }
