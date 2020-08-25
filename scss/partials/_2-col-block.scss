@@ -19,6 +19,8 @@
         }
 
         &__container {
+            max-width: 20em;
+            margin: 0 auto;
             &__cta {
                 background-color: $purple;
                 border: none;
