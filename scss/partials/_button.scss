@@ -1,0 +1,26 @@
+.btn {
+    border: none;
+    border-radius: 0;
+    font-size: 2.25rem;
+    font-family: $ff-heading;
+    padding:0;
+}
+
+.btn-primary {    
+    color: #fff;
+    background-color: $purple;
+    display: inline-block;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        background: lighten($purple, 20%);
+        border-color: $purple;
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background: darken($purple, 20%);
+        border-color: $purple;
+    }
+
+}

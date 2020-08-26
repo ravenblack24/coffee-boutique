@@ -1,6 +1,7 @@
 .allergies {
     margin-top: 1.25em;
     margin-bottom: 1.25em;
+    text-align: center;
 
     &--nomargin {
         margin:0;
@@ -11,16 +12,7 @@
         &__container {
             max-width: 64em;
             margin: 0 auto;
-
-            &__cta {
-                background-color: $purple;
-                border: none;
-                border-radius: 0;
-                font-family: $ff-heading;
-                font-size: 2.25rem;
-                padding:0;
-            }
+            padding: 1em;
         }
-
     }
 }

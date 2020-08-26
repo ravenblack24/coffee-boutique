@@ -1,5 +1,6 @@
 .footer  {
     background-color: $green;
+    padding-top: 1.5em;
 
     &__block {
         color: $white;
@@ -11,26 +12,28 @@
         }
 
         &__list { 
+            padding-top: 0.75em;
 
             & dt {
                 font-weight: normal;
+                
             }
 
-            & li a {
-                text-decoration: none;
-                color: $white;
+            & li {
+                padding-bottom: 1em;
+
+                & a {
+                    text-decoration: none;
+                    color: $white;
+                }
             }
 
-            &__item {
-          
-
+            &__item {  
                 &__icon {
                     padding-right: 1em;
                     font-size: 1rem;
                 }
             }
         }
-
-  
     }
 }
