@@ -1,37 +1,54 @@
 .footer  {
     background-color: $green;
-    padding-top: 1.5em;
+    padding: 1.5em 0;
 
-    &__block {
-        color: $white;
-        font-size: 0.875rem;
+    @media(min-width: 48em) {
+        padding: 2em;
+    }
 
-        & p {
+    &__row {
+        max-width: 60em;
+        margin: 0 auto;
+
+        &__block {
             color: $white;
             font-size: 0.875rem;
-        }
 
-        &__list { 
-            padding-top: 0.75em;
-
-            & dt {
-                font-weight: normal;
-                
+            @media(min-width: 64em) {
+                font-size: 1.125rem;
             }
 
-            & li {
-                padding-bottom: 1em;
+            & p {
+                color: $white;
+                font-size: 0.875rem;
 
-                & a {
-                    text-decoration: none;
-                    color: $white;
+                @media(min-width: 64em) {
+                    font-size: 1.125rem;
                 }
             }
 
-            &__item {  
-                &__icon {
-                    padding-right: 1em;
-                    font-size: 1rem;
+            &__list { 
+                padding-top: 0.75em;
+
+                & dt {
+                    font-weight: normal;
+                    
+                }
+
+                & li {
+                    padding-bottom: 1em;
+
+                    & a {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+
+                &__item {  
+                    &__icon {
+                        padding-right: 1em;
+                        font-size: 1rem;
+                    }
                 }
             }
         }

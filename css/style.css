@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Andika&family=Pacifico&display=swap");
+h1,
+h2,
+h3,
+h4,
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
   color: #fff; }
+  @media (min-width: 64em) {
+    h1 {
+      font-size: 4em; } }
 
 h2, h3, h4, h5, h6 {
   font-family: "Amatic SC", cursive;
@@ -16,23 +27,38 @@ h2 {
   padding: 0.25em 0; }
   h2--white {
     color: #fff; }
+  @media (min-width: 64em) {
+    h2 {
+      font-size: 4rem; } }
 
 h3 {
   font-size: 2.25rem;
   color: #89B3AA;
   font-weight: bold; }
+  @media (min-width: 64em) {
+    h3 {
+      font-size: 3rem;
+      line-height: 1;
+      padding-bottom: 0.5em; } }
 
 h4 {
   font-size: 2.25rem;
   color: #fff;
   font-weight: bold; }
+  @media (min-width: 64em) {
+    h4 {
+      font-size: 3rem; } }
 
 p {
   font-family: 'Andika', cursive;
   font-size: 1rem;
   color: #89B3AA;
   line-height: 1.375;
-  padding: 0.25em; }
+  padding: 0.5em; }
+  @media (min-width: 64em) {
+    p {
+      font-size: 1.3rem;
+      line-height: 1.45; } }
 
 .banner {
   background-image: url(../../img/banner-large.png);
@@ -55,7 +81,9 @@ p {
     font-size: 1.875rem;
     color: #fff;
     font-family: "Amatic SC", cursive;
-    line-height: 1.06; }
+    line-height: 1.06;
+    display: inline-block;
+    max-width: 10em; }
 
 .btn {
   border: none;
@@ -63,12 +91,18 @@ p {
   font-size: 2.25rem;
   font-family: "Amatic SC", cursive;
   padding: 0; }
+  @media (min-width: 64em) {
+    .btn {
+      padding: 0.1em; } }
 
 .btn-primary {
   color: #fff;
   background-color: #685F74;
   display: inline-block;
   width: 100%; }
+  @media (min-width: 48em) {
+    .btn-primary {
+      width: 80%; } }
   .btn-primary:hover, .btn-primary:focus {
     background: #9b93a6;
     border-color: #685F74; }
@@ -89,7 +123,7 @@ p {
       background-image: url(../../img/rebekah.png); }
   .block__row__container {
     padding-top: 1em;
-    max-width: 20em;
+    max-width: 25em;
     margin: 0 auto;
     text-align: center; }
     .block__row__container__cta {
@@ -102,18 +136,36 @@ p {
   text-align: center; }
   .made-to-order__row__container {
     padding-top: 1em;
-    max-width: 64em;
     margin: 0 auto; }
-    .made-to-order__row__container__service {
+    .made-to-order__row__container__intro {
+      padding: 0 6em;
+      margin: 0 auto; }
+    @media (min-width: 48em) {
+      .made-to-order__row__container__row {
+        margin: 2em 0; } }
+    .made-to-order__row__container__row__service {
       background-image: url(../../img/afternoontea.PNG);
       background-size: cover;
       background-position: center;
       height: 288px;
       margin-bottom: 1em; }
-      .made-to-order__row__container__service__cta {
+      @media (min-width: 48em) {
+        .made-to-order__row__container__row__service {
+          margin-right: 1em; }
+          .made-to-order__row__container__row__service:last-child {
+            margin-right: 0; } }
+      @media (min-width: 64em) {
+        .made-to-order__row__container__row__service {
+          height: 414px; } }
+      .made-to-order__row__container__row__service__cta {
         margin-top: auto;
         margin-bottom: 0.25em; }
-      .made-to-order__row__container__service--no-margin {
+        @media (min-width: 48em) {
+          .made-to-order__row__container__row__service__cta {
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%; } }
+      .made-to-order__row__container__row__service--no-margin {
         margin-bottom: 0; }
 
 .shop {
@@ -127,22 +179,44 @@ p {
   .shop__row__container {
     max-width: 30em;
     margin: 0 auto;
-    text-align: center;
-    padding: 1em; }
+    text-align: center; }
+    @media (min-width: 48em) {
+      .shop__row__container {
+        padding: 4em 0; } }
     .shop__row__container h2,
     .shop__row__container p {
       color: #fff; }
+    .shop__row__container h2 {
+      padding-top: 0; }
+    @media (min-width: 64em) {
+      .shop__row__container__cta {
+        margin-top: 1.5rem;
+        width: 50%; } }
 
 .allergies {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   text-align: center; }
-  .allergies--nomargin {
-    margin: 0; }
+  @media (min-width: 48em) {
+    .allergies {
+      margin-top: 3em; } }
+  .allergies__row__image {
+    background-image: url(../../img/allergies.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 161px; }
+    @media (min-width: 64em) {
+      .allergies__row__image {
+        background-image: url(../../img/allergies--large.PNG);
+        background-size: contain; } }
   .allergies__row__container {
     max-width: 64em;
     margin: 0 auto;
     padding: 1em; }
+    @media (min-width: 64em) {
+      .allergies__row__container__cta {
+        margin-top: 1.5rem;
+        width: 60%; } }
 
 .bow {
   margin: 1.25em 0; }
@@ -150,25 +224,41 @@ p {
     background-image: url(../../img/string.PNG);
     background-position: center;
     height: 104px; }
+    @media (min-width: 48em) {
+      .bow__image {
+        background-image: url(../../img/string--large.PNG);
+        height: 262px; } }
 
 .footer {
   background-color: #89B3AA;
-  padding-top: 1.5em; }
-  .footer__block {
-    color: #fff;
-    font-size: 0.875rem; }
-    .footer__block p {
+  padding: 1.5em 0; }
+  @media (min-width: 48em) {
+    .footer {
+      padding: 2em; } }
+  .footer__row {
+    max-width: 60em;
+    margin: 0 auto; }
+    .footer__row__block {
       color: #fff;
       font-size: 0.875rem; }
-    .footer__block__list {
-      padding-top: 0.75em; }
-      .footer__block__list dt {
-        font-weight: normal; }
-      .footer__block__list li {
-        padding-bottom: 1em; }
-        .footer__block__list li a {
-          text-decoration: none;
-          color: #fff; }
-      .footer__block__list__item__icon {
-        padding-right: 1em;
-        font-size: 1rem; }
+      @media (min-width: 64em) {
+        .footer__row__block {
+          font-size: 1.125rem; } }
+      .footer__row__block p {
+        color: #fff;
+        font-size: 0.875rem; }
+        @media (min-width: 64em) {
+          .footer__row__block p {
+            font-size: 1.125rem; } }
+      .footer__row__block__list {
+        padding-top: 0.75em; }
+        .footer__row__block__list dt {
+          font-weight: normal; }
+        .footer__row__block__list li {
+          padding-bottom: 1em; }
+          .footer__row__block__list li a {
+            text-decoration: none;
+            color: #fff; }
+        .footer__row__block__list__item__icon {
+          padding-right: 1em;
+          font-size: 1rem; }

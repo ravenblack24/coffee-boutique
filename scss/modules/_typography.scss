@@ -2,10 +2,23 @@
 
 $ff-heading: 'Amatic SC', cursive;
 
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+
 h1 {
     font-family: 'Pacifico', cursive;
     font-size:2rem;
     color: $white;
+
+    @media(min-width: 64em) {
+        font-size: 4em;
+    }
 }
 
 h2, h3, h4, h5, h6 {
@@ -23,18 +36,32 @@ h2 {
     &--white {
         color: $white;
     }
+
+    @media(min-width: 64em) {
+        font-size: 4rem;
+    }
 }
 
 h3 {
     font-size: 2.25rem;
     color: $green;
     font-weight: bold;
+
+    @media(min-width: 64em) {
+        font-size: 3rem;
+        line-height: 1;
+        padding-bottom: 0.5em;
+    }
 }
 
 h4 {
     font-size: 2.25rem;
     color: $white;
     font-weight: bold;
+
+    @media(min-width: 64em) {
+        font-size: 3rem;
+    }
 }
 
 p {
@@ -42,5 +69,10 @@ p {
     font-size: 1rem;
     color: $green;
     line-height: 1.375;
-    padding: 0.25em;
+    padding: 0.5em;
+
+    @media(min-width: 64em) {
+        font-size: 1.3rem;
+        line-height: 1.45;
+    }
 }

@@ -5,5 +5,10 @@
         background-image: url(../../img/string.PNG);
         background-position: center;
         height: 104px;
+
+        @media(min-width: 48em) {
+            background-image: url(../../img/string--large.PNG);
+            height: 262px;
+        }
     }
 }
